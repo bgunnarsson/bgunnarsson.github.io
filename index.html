@@ -29,14 +29,17 @@
             -moz-transform: translate(-50%, -50%);
         }
         .logo svg {
-            fill: rgba(255,255,255, .8);
+            fill: #fff;
             height: 50vh;
             width: auto;
-            filter: drop-shadow(3px 3px 47px rgba(90,82,255, .7));
-            transition: fill .5s ease-in-out;
+            filter: drop-shadow(3px 3px 47px rgba(90,82,255, .5));
+            opacity: .8;
+            transition: opacity .5s ease-in-out, filter .5s ease-in-out;
+            transition-delay: .05s;
         }
         .logo:hover svg {
-            fill: rgba(255,255,255, 1);
+            opacity: 1;
+            filter: drop-shadow(3px 3px 47px rgba(90,82,255, .6));
         }
     </style>
 </head>
