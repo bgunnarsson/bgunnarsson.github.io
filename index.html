@@ -18,6 +18,7 @@
             margin: 0;
             line-height: 1;
             background: #5A52FF;
+            background: #191324;
         }
         .logo {
             position: fixed;
@@ -27,11 +28,15 @@
             -webkit-transform: translate(-50%, -50%);
             -moz-transform: translate(-50%, -50%);
         }
-
         .logo svg {
-            fill: #fff;
-            height: 90vh;
+            fill: rgba(255,255,255, .8);
+            height: 50vh;
             width: auto;
+            filter: drop-shadow(3px 3px 47px rgba(90,82,255, .7));
+            transition: fill .5s ease-in-out;
+        }
+        .logo:hover svg {
+            fill: rgba(255,255,255, 1);
         }
     </style>
 </head>
